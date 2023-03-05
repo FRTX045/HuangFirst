@@ -12,7 +12,7 @@ int main() {
 
     while (getline(inputFile, line)) {
         stringstream ss;
-        ss << "File_Bot/Bot" << i << ".txt"; // membuat nama file baru di dalam folder "Output"
+        ss << "File_Bot/" << i << ".txt"; // membuat nama file baru di dalam folder "Output"
         ofstream outputFile(ss.str().c_str()); // membuka file baru
         outputFile << line; // menuliskan baris ke dalam file baru
         outputFile.close(); // menutup file baru
