@@ -21,7 +21,7 @@ int main() {
     while (getline(inputFile, line)) {
         if (line.find(":1sampai8.") != string::npos) {
             // hapus kata ":1sampai8." dari baris yang mengandungnya
-            line.erase(line.find(":1sampai8."), 10);
+            line.erase(line.find(":Password."), 10);
         }
         // konversi teks menjadi huruf kapital
         transform(line.begin(), line.end(), line.begin(), ::toupper);
