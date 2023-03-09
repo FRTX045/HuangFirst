@@ -19,7 +19,7 @@ int main() {
     string text;
     string line;
     while (getline(inputFile, line)) {
-        if (line.find(":1sampai8.") != string::npos) {
+        if (line.find(":Password.") != string::npos) {
             // hapus kata ":1sampai8." dari baris yang mengandungnya
             line.erase(line.find(":Password."), 10);
         }
