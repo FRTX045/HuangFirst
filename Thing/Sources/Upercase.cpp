@@ -20,7 +20,6 @@ int main() {
     string line;
     while (getline(inputFile, line)) {
         if (line.find(":Password.") != string::npos) {
-            // hapus kata ":1sampai8." dari baris yang mengandungnya
             line.erase(line.find(":Password."), 10);
         }
         // konversi teks menjadi huruf kapital
@@ -34,7 +33,7 @@ int main() {
     outputFile << text;
     outputFile.close();
 
-    cout << "Teks di file input.txt telah diubah menjadi huruf kapital dan kata ':1sampai8.' dihapus dari baris yang mengandungnya." << endl;
+    cout << "Teks di file input.txt telah diubah menjadi huruf kapital dan kata PASSWORD dihapus dari baris yang mengandungnya." << endl;
 
     return 0;
 }
