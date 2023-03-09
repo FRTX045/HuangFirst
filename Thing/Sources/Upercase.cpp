@@ -19,8 +19,8 @@ int main() {
     string text;
     string line;
     while (getline(inputFile, line)) {
-        if (line.find(":Password.") != string::npos) {
-            line.erase(line.find(":Password."), 10);
+        if (line.find(":ubah") != string::npos) {
+            line.erase(line.find(":ubah"), 10);
         }
         // konversi teks menjadi huruf kapital
         transform(line.begin(), line.end(), line.begin(), ::toupper);
